@@ -73,11 +73,10 @@
 }
 
 .containerAboutUs{
-  background-color: #9DD636;
+  background-color: #D2FF02;
   border-radius: 20px;
   height: 100%;
   padding: 10%;
-  cursor: pointer;
 
   display: flex;
   justify-content: space-between;
@@ -86,7 +85,7 @@
 }
 
 .titleAboutUs{
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   align-self: flex-start;
 }
 
@@ -102,7 +101,6 @@
   border-radius: 20px;
   height: 100%;
   padding: 10%;
-  cursor: pointer;
 
   display: flex;
   justify-content: space-between;
@@ -112,6 +110,21 @@
 
 .titleContacto{
   color: #FAFAFA;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   align-self: flex-start;
 }
+
+.btnContacto{
+  background-color: #FAFAFA;
+  color: #2B2934;
+  font-family: 'SignikaRegular';
+  font-size: 1rem;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 7px;
+  display: flex;
+  margin-top:10% ;
+}
+

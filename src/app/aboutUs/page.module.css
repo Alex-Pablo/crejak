@@ -1,0 +1,105 @@
+.container{
+    background-color: #FAFAFA;
+    height: 100vh;
+    padding: 2% 5%;
+  }
+  
+  .logo{
+    color: #6D0DE3;
+    font-size: 1.1rem;
+    font-family: SignikaBold;
+    height: 5%;
+  }
+
+  .wrapperMain{
+    height: 95%;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .wrapperMision{
+    grid-column: 1;
+    grid-row: 0;
+    padding: 10px;
+  }
+
+  .containerMision{
+    background-color: #9AD321;
+    border-radius: 20px;
+    height: 100%;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+  .titleMision{
+    font-family: 'outward';
+    font-size: 5rem;
+  }
+
+
+  .mision{
+    font-family: 'SignikaSemibold';
+    font-size: 1.1rem;
+  }
+
+.wrapperVision{
+    grid-column: 2;
+    grid-row: 0;
+    padding: 10px;
+}
+
+
+.containerVision{
+    background-color: #A1DF07;
+    border-radius: 20px;
+    height: 100%;
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+
+.wrapperOurTeam{
+    grid-column: 1/3;
+    grid-row: 2;
+    padding: 5px;
+}
+
+.containerOurTeam{
+    background-color: #A1DF07;
+    border-radius: 20px;
+    height: 100%;
+    padding: 2%;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.titleOurTeam{
+    font-family: 'SignikaBold';
+    font-size: 2rem;
+}
+
+.wrapperTeams{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team{
+    background-color: rgba(73, 143, 39, 0.26);
+    font-size: 1.1rem;
+    font-family: 'SignikaSemibold';
+    width: 500px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+}

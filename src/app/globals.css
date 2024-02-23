@@ -42,4 +42,9 @@ a {
     src: url(../../public/fonts/Signika-Light.otf);
     font-display: 'swap';
   }
+  @font-face{
+    font-family: 'outward';
+    src: url(../../public/fonts/outward-block.ttf);
+    font-display: 'swap';
+  }
   
