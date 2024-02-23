@@ -1,95 +1,84 @@
-import Image from "next/image";
+"use client"
+import Image from 'next/image'
 import styles from "./page.module.css";
+import { motion } from "framer-motion"
+import iconArrowIzquierda from '../../public/ArrowIzquierda.svg'
+import iconArrowOutward  from '../../public/ArrowOutward.svg'
+import iconArrowOutwardWhite from '../../public/ArrowOutwardWhite.svg'
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className={styles.container}>
+      <nav className={styles.logo}>crejak</nav>
+      <div className={styles.wrapperMain}>
+
+        <div className={styles.wrapperContent}>
+          <motion.div
+          drag
+          dragConstraints={{
+            top:-10,
+            left:-10,
+            right:-10,
+            bottom:-10
+          }}
+          className={styles.content}
           >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+            <p className={styles.slogan1}>Somos</p>
+            <p className={styles.slogan2}>tu solucion</p>
+
+            <motion.button className={styles.btnProject} whileHover={{scale:1.1}} whileTap={{scale:0.9}}> 
+              <Image src={iconArrowIzquierda} alt=''width={20} /> Ver Proyecto
+            </motion.button>
+          </motion.div>
         </div>
+
+        <div className={styles.wrapperImg}>
+        <motion.div
+          drag
+          dragConstraints={{
+            top:-10,
+            left:-10,
+            right:-10,
+            bottom:-10
+          }}
+          className={styles.containerImg}
+          >
+          </motion.div>
+        </div>
+
+        <div className={styles.wrapperAboutUs}>
+        <motion.div
+          drag
+          dragConstraints={{
+            top:-10,
+            left:-10,
+            right:-10,
+            bottom:-10
+          }}
+          className={styles.containerAboutUs}
+          >
+            <Image src={iconArrowOutward} alt=''width={20} />
+            <h4 className={styles.titleAboutUs}>Sobre nosotros</h4>
+          </motion.div>
+        </div>
+
+        <div className={styles.wrapperContact}>
+        <motion.div
+          drag
+          dragConstraints={{
+            top:-10,
+            left:-10,
+            right:-10,
+            bottom:-10
+          }}
+          className={styles.containerContact}
+          >
+            <Image src={iconArrowOutwardWhite} alt=''width={20} />
+            <h4 className={styles.titleContacto}>Contacto</h4>
+          </motion.div>
+        </div>
+
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   );
 }
