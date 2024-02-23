@@ -84,7 +84,7 @@ export default function Home() {
             }}
             className={styles.containerContact}
           >
-            <Link href="/aboutUs">
+            <Link href="/contact">
               <motion.button
                 className={styles.btnContacto}
                 whileHover={{ scale: 1.1 }}

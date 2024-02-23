@@ -1,0 +1,64 @@
+.container{
+    background-color: #FAFAFA;
+    height: 100vh;
+    padding: 2% 5%;
+  }
+  
+  .logo{
+    color: #6D0DE3;
+    font-size: 1.1rem;
+    font-family: SignikaBold;
+    height: 5%;
+  }
+
+
+
+  .wrapperMain{
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+
+  .wrapperContact{
+    grid-column: 1;
+    grid-row: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.containerContact{
+    width: 80%;
+    height: 70%;
+
+    background-color: #6A26BA;
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+.titleContacto{
+    color: #FAFAFA;
+    font-family: 'SignikaBold';
+    font-size: 2rem;
+}
+
+.wrapperInfoContact{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.wrapperInformation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.information{
+    display: flex;
+    gap: 15px;
+    color: white;
+}

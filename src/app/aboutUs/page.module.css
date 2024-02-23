@@ -26,7 +26,7 @@
   }
 
   .containerMision{
-    background-color: #9AD321;
+    background-color: #A1DF07;
     border-radius: 20px;
     height: 100%;
     padding: 5%;
@@ -53,10 +53,14 @@
     grid-row: 0;
     padding: 10px;
 }
-
+.titleVision{
+  font-family: 'outward';
+  font-size: 5rem;
+  color: #FAFAFA;
+}
 
 .containerVision{
-    background-color: #A1DF07;
+    background-color: #6824bba4;
     border-radius: 20px;
     height: 100%;
     padding: 5%;
@@ -64,6 +68,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+  }
+
+  .vision{
+    font-family: 'SignikaSemibold';
+    font-size: 1.1rem;
+    color: #FAFAFA;
   }
 
 

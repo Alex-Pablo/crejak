@@ -45,8 +45,8 @@ export default function AboutUs() {
             }}
             className={styles.containerVision}
           >
-            <p className={styles.titleMision}>Vision</p>
-            <p className={styles.mision}>
+            <p className={styles.titleVision}>Vision</p>
+            <p className={styles.vision}>
               En la empresa informática CREJAK buscamos ser reconocidos como el
               referente global en soluciones informáticas que transforman
               positivamente la manera en que las personas viven, trabajan y se
