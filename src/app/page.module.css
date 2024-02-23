@@ -57,6 +57,8 @@
   grid-column: 2/4;
   grid-row: 1;
   padding: 25px 0px ;
+  height: 100%;
+  overflow: hidden;
 }
 
 .containerImg{
@@ -64,6 +66,17 @@
   border-radius: 20px;
   height: 100%;
   padding: 10%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+.imgProgram{
+  width: 150%;
+  height: 150%;
+  position: relative;
+  bottom: -19%;
+  right: -20%;
 }
 
 .wrapperAboutUs{

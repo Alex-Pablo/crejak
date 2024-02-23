@@ -7,6 +7,8 @@ import iconArrowOutward from "../../public/ArrowOutward.svg";
 import iconArrowOutwardWhite from "../../public/ArrowOutwardWhite.svg";
 import { useCallback, useState } from "react";
 import Link from "next/link";
+import drawProgramm from '../../public/undraw_programming_re_kg9v.svg'
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -46,7 +48,9 @@ export default function Home() {
               bottom: -10,
             }}
             className={styles.containerImg}
-          ></motion.div>
+          >
+                          <Image src={drawProgramm} alt="" className={styles.imgProgram}/>
+          </motion.div>
         </div>
 
         <div className={styles.wrapperAboutUs}>
