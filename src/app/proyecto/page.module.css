@@ -1,0 +1,44 @@
+.container{
+    background-color: #FAFAFA;
+    height: 100vh;
+    padding: 2% 5%;
+  }
+  
+  .logo{
+    color: #6D0DE3;
+    font-size: 1.1rem;
+    font-family: SignikaBold;
+    height: 5%;
+  }
+
+  .wrapperMain{
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .wrapperProyecCenter{
+    grid-column: 1;
+    grid-row: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerProject{
+    height: 90%;
+    width: 100%;
+    background-color: #2B2934;
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+.titleProjectMain{
+    font-size: 1.5rem;
+    color: #FAFAFA;
+    font-family: 'SignikaBold';
+}
+

@@ -23,18 +23,33 @@ export default function Home() {
               right: -10,
               bottom: -10,
             }}
+            dragTransition={{
+              min: 0,
+              max: 100,
+              bounceDamping: 8
+            }}
+            animate={{ rotate: -1 }}
+            transition={{ from:180, type: 'spring', restDelta: 2 }}
+
             className={styles.content}
           >
-            <p className={styles.slogan1}>Somos</p>
-            <p className={styles.slogan2}>tu solucion</p>
+            <div>
+              <p className={styles.slogan1}>Somos</p>
+              <p className={styles.slogan2}>tu solucion</p>
+            </div>
 
-            <motion.button
-              className={styles.btnProject}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Image src={iconArrowIzquierda} alt="" width={20} /> Ver Proyecto
-            </motion.button>
+            <div>
+              <Link href="/proyecto">
+              <motion.button
+                className={styles.btnProject}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image src={iconArrowIzquierda} alt="" width={20} /> Ver
+                Proyecto
+              </motion.button>
+              </Link>
+            </div>
           </motion.div>
         </div>
 
@@ -47,9 +62,14 @@ export default function Home() {
               right: -10,
               bottom: -10,
             }}
+            dragTransition={{
+              min: 0,
+              max: 100,
+              bounceDamping: 8
+            }}
             className={styles.containerImg}
           >
-                          <Image src={drawProgramm} alt="" className={styles.imgProgram}/>
+            <Image src={drawProgramm} alt="" className={styles.imgProgram} />
           </motion.div>
         </div>
 
@@ -61,6 +81,11 @@ export default function Home() {
               left: -10,
               right: -10,
               bottom: -10,
+            }}
+            dragTransition={{
+              min: 0,
+              max: 100,
+              bounceDamping: 8
             }}
             className={styles.containerAboutUs}
           >

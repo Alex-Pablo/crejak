@@ -30,6 +30,10 @@
   border-radius: 20px;
   height: 100%;
   padding: 10%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .slogan1, .slogan2{
