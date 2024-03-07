@@ -17,7 +17,6 @@
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
   }
-
   .wrapperProyecCenter{
     grid-column: 1;
     grid-row: 0;
@@ -37,33 +36,30 @@
 }
 
 .titleProjectMain{
-    font-size: 1.6rem;
-    color: #2F3E46;
-    font-family: 'SignikaBold';
+    font-size: 1rem;
+    color: #35434b;
+    font-family: 'SignikaRegular';
+    margin-bottom: 30px;
 }
 
-.wrapperEntrevistasCuestionarios{
-  margin-top:40px ;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-.entreCitaRePaciente{
-  width: 250px;
-  padding: 20px;
-  border-radius: 10px;
-  background-color: rgba(141, 197, 156, 0.67);
+.tituloInforUser{
+    color: #253238;
+    font-family: 'SignikaSemiBold';
+    margin-left: 10%;
+    font-size: 1.2rem;
+    margin-bottom : 30px;
 }
 
-.titleCiRepaciente{
-  font-size: 1.3em;
-  color: #2B2934;
-  font-family: 'SignikaBold';
-  margin-bottom: 5px;
+.wrapperformInfoUser{
+  width: 80%;
+  margin: auto;
 }
 
-.proCiRePaciente{
-  color: #2F3E46;
-  font-family: 'SignikaSemibold';
-  font-size: 1rem;
+.btnEnviar{
+  background-color:#84a98c ;
+  color: white;
+  font-family: 'SignikaSemiBold';
+  padding: 8px 15px;
+  border-radius: 7px;
+  margin-top: 30px;
 }

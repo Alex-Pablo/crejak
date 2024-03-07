@@ -45,8 +45,7 @@ export default function Home() {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
               >
-                <Image src={iconArrowIzquierda} alt="" width={20} /> Ver
-                Proyecto
+                <Image src={iconArrowIzquierda} alt="" width={20} /> Ver  incremento
               </motion.button>
               </Link>
             </div>
