@@ -11,6 +11,7 @@ const EntrevistaRegistroPaciente = mongoose.Schema(
     pregunta7: String,
     pregunta8: String,
     pregunta9: String,
+    idUser: String,
   },
   {
     timestamps: true,

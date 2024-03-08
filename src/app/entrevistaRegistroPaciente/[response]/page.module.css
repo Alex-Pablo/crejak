@@ -42,21 +42,45 @@
     margin-bottom: 30px;
 }
 
+.wrapperTituloProcess{
+  background-color: #2B2934;
+  color: #DAF7D5;
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+}
+
 .tituloInforUser{
-    color: #253238;
-    font-family: 'SignikaSemiBold';
+    font-family: 'SignikaBold';
     margin-left: 10%;
-    font-size: 1.2rem;
-    margin-bottom : 30px;
+    font-size: 1.3rem;
 }
 
 .wrapperformInfoUser{
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
+
+
+.tituloPregunta{
+  background-color: #69BF70;
+  padding: 10px;
+  border-radius: 15px;
+  color: #000000;
+  font-family: 'SignikaSemibold';
+  font-size: 1rem;
+}
+
+.wrapperSelectionOptions{
+  border: #69BF70 solid 1px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0 0 0;
+}
+
 .btnEnviar{
-  background-color:#84a98c ;
+  background-color:#29923f ;
   color: white;
   font-family: 'SignikaSemiBold';
   padding: 8px 15px;

@@ -19,9 +19,8 @@ export async function POST(req){
         phoneNumber: phoneNumber,
         area:area
     })
-    await person.save()
-
-    return NextResponse.json({
-        message:"ok"
+    const resutl =  await person.save()
+    return  NextResponse.json({
+        response: resutl
     })
 }

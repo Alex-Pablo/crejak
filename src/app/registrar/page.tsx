@@ -6,8 +6,12 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
+
+
+
 export default function Regisrar() {
   const router = useRouter();
+
   const user:any = "e"
   const { register, handleSubmit, reset, formState } = useForm({
     defaultValues: user,
@@ -33,15 +37,17 @@ export default function Regisrar() {
 
   async function onSubmit(data: any) {
     try {
-      console.log(data);
-      const response = await fetch("/api/user", {
+      const responsen = await fetch("/api/user", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
         },
       });
-      router.push("/entrevistaRegistroPaciente", { scroll: false });
+
+      const {response} = await responsen.json()
+      console.log(response._id)
+      router.push(`/entrevistaRegistroPaciente/${response._id}`, { scroll: true}) ;
     } catch (error: any) {
       console.log("hubo un error");
       router.push("/proyecto", { scroll: false });
