@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 
-export default function EntrevistaRegistroPaciente({
+export default function EntrevistaGestionInventario({
   params,
 }: {
   params: { response: String };
@@ -15,7 +15,7 @@ export default function EntrevistaRegistroPaciente({
   const router = useRouter();
   const user: any = "e";
 
-  const idUser = params.response
+  const idUser = params.response;
 
   const { register, handleSubmit, reset, formState } = useForm({
     defaultValues: user,
@@ -59,10 +59,10 @@ export default function EntrevistaRegistroPaciente({
   };
 
   async function onSubmit(data: any) {
-    data.idUser = idUser
+    data.idUser = idUser;
     try {
       console.log(data);
-      const response = await fetch("/api/entrevistaRegistroPaciente", {
+      const response = await fetch("/api/entrevistaGestionInventario", {
         method: "POST",
         body: JSON.stringify(data),
         headers: {
@@ -92,7 +92,7 @@ export default function EntrevistaRegistroPaciente({
             <motion.div className={styles.wrapperGetInfomacion}>
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
-                  Proceso registro de inventario y asignacion de cita
+                  Proceso gestion de inventario
                 </p>
               </div>
               <motion.div className={styles.wrapperformInfoUser}>
@@ -102,8 +102,8 @@ export default function EntrevistaRegistroPaciente({
                       htmlFor="pregunta1"
                       className="block mb-2 text-base font-bold text-gray-900"
                     >
-                      ¿Cómo describiría el proceso actual de registro de
-                      pacientes en la clínica veterinaria?
+                      ¿Cómo describiría el actual proceso de gestión de
+                      inventarios en la clínica veterinaria?
                     </label>
                     <textarea
                       {...fields.pregunta1}
@@ -122,8 +122,9 @@ export default function EntrevistaRegistroPaciente({
                       htmlFor="pregunta2"
                       className="block mb-2 text-base font-bold text-gray-900"
                     >
-                      ¿Cuáles son los desafíos más comunes que enfrenta el
-                      personal al registrar la información de los pacientes?
+                      ¿Cuáles son los mayores desafíos que enfrenta el personal
+                      al manejar el inventario de suministros médicos y
+                      productos en la clínica?
                     </label>
                     <textarea
                       {...fields.pregunta2}
@@ -142,8 +143,8 @@ export default function EntrevistaRegistroPaciente({
                       htmlFor="pregunta3"
                       className="block mb-2 text-base font-bold text-gray-900"
                     >
-                      ¿Cómo manejan la información confidencial de los pacientes
-                      en términos de privacidad y seguridad?
+                      ¿Cómo se realizan las compras y reposiciones de
+                      inventario? ¿Hay un proceso establecido?
                     </label>
                     <textarea
                       {...fields.pregunta3}
@@ -162,8 +163,8 @@ export default function EntrevistaRegistroPaciente({
                       htmlFor="pregunta4"
                       className="block mb-2 text-base font-bold text-gray-900"
                     >
-                      ¿Cuál es la importancia que asignan a la precisión y
-                      actualización de los registros de los pacientes?
+                      ¿Cómo se aseguran de mantener actualizada la información
+                      sobre las fechas de vencimiento de los productos?
                     </label>
                     <textarea
                       {...fields.pregunta4}
@@ -182,8 +183,8 @@ export default function EntrevistaRegistroPaciente({
                       htmlFor="pregunta5"
                       className="block mb-2 text-base font-bold text-gray-900"
                     >
-                      ¿Cuáles son las áreas específicas en las que cree que se
-                      podrían realizar mejoras en el sistema de registro actual?
+                      ¿Cuáles son las estrategias implementadas para minimizar
+                      pérdidas y desperdicios en el inventario?
                     </label>
                     <textarea
                       {...fields.pregunta5}
@@ -200,8 +201,8 @@ export default function EntrevistaRegistroPaciente({
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Utilizan actualmente un sistema informático para el
-                        registro de pacientes en la clínica?
+                        ¿Utilizan un sistema informático para la gestión de
+                        inventarios en la clínica?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -211,14 +212,14 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta6-1"
                             type="radio"
                             name="pregunta6"
-                            value="Sí, contamos con un sistema informático integral."
+                            value="Sí, contamos con un sistema informático avanzado."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta6-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Sí, contamos con un sistema informático integral.
+                            Sí, contamos con un sistema informático avanzado.
                           </label>
                         </div>
 
@@ -228,14 +229,14 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta6-2"
                             type="radio"
                             name="pregunta6"
-                            value="No, utilizamos principalmente registros en papel."
+                            value="No, utilizamos métodos manuales y registros en papel"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta6-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            No, utilizamos principalmente registros en papel.
+                            No, utilizamos métodos manuales y registros en papel
                           </label>
                         </div>
 
@@ -245,15 +246,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta6-3"
                             type="radio"
                             name="pregunta6"
-                            value="Estamos en proceso de implementar un sistema informático."
+                            value="Estamos en proceso de evaluación para implementar un sistema informático."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta6-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Estamos en proceso de implementar un sistema
-                            informático.
+                            Estamos en proceso de evaluación para implementar un
+                            sistema informático.
                           </label>
                         </div>
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -264,8 +265,8 @@ export default function EntrevistaRegistroPaciente({
 
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿El personal está capacitado regularmente en el manejo
-                        de registros y sistemas de registro?
+                        ¿Hay un empleado designado específicamente para
+                        supervisar y gestionar el inventario?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -275,14 +276,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta7-1"
                             type="radio"
                             name="pregunta7"
-                            value="Sí, el personal recibe capacitación periódica."
+                            value=" Sí, hay un empleado designado a tiempo completo para la gestión de inventarios."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta7-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Sí, el personal recibe capacitación periódica.
+                            Sí, hay un empleado designado a tiempo completo para
+                            la gestión de inventarios.
                           </label>
                         </div>
 
@@ -292,14 +294,16 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta7-2"
                             type="radio"
                             name="pregunta7"
-                            value="No, la capacitación es limitada o poco frecuente.."
+                            value="No, la responsabilidad de la gestión de inventarios se comparte entre varios 
+                            empleados."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta7-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            No, la capacitación es limitada o poco frecuente.
+                            No, la responsabilidad de la gestión de inventarios
+                            se comparte entre varios empleados.
                           </label>
                         </div>
 
@@ -309,14 +313,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta7-3"
                             type="radio"
                             name="pregunta7"
-                            value=" La capacitación varía según el puesto de trabajo."
+                            value=" No hay un empleado designado específicamente para esta tarea."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta7-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            La capacitación varía según el puesto de trabajo.
+                            No hay un empleado designado específicamente para
+                            esta tarea.
                           </label>
                         </div>
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -329,8 +334,8 @@ export default function EntrevistaRegistroPaciente({
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Se realiza alguna auditoría periódica para verificar la
-                        exactitud de la información de los registros?
+                        ¿Realizan inventarios físicos periódicos para
+                        reconciliar los registros con el stock real?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -340,14 +345,14 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta8-1"
                             type="radio"
                             name="pregunta8"
-                            value="Sí, realizamos auditorías regularmente."
+                            value="Sí, realizamos inventarios físicos regularmente."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta8-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Sí, realizamos auditorías regularmente.
+                            Sí, realizamos inventarios físicos regularmente.
                           </label>
                         </div>
 
@@ -357,15 +362,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta8-2"
                             type="radio"
                             name="pregunta8"
-                            value=" No, las auditorías son poco frecuentes o inexistentes"
+                            value=" No, solo realizamos inventarios físicos en casos excepcionales"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta8-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            No, las auditorías son poco frecuentes o
-                            inexistentes
+                            No, solo realizamos inventarios físicos en casos
+                            excepcionales
                           </label>
                         </div>
 
@@ -375,14 +380,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta8-3"
                             type="radio"
                             name="pregunta8"
-                            value=" Solo se realizan auditorías en casos específicos."
+                            value=" No realizamos inventarios físicos para reconciliación."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta8-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Solo se realizan auditorías en casos específicos.
+                            No realizamos inventarios físicos para
+                            reconciliación.
                           </label>
                         </div>
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -393,9 +399,8 @@ export default function EntrevistaRegistroPaciente({
 
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Cuánto tiempo, en promedio, dedica el personal a
-                        completar la información de un nuevo paciente en los
-                        registros?
+                        ¿Tienen acuerdos establecidos con proveedores para
+                        garantizar un suministro constante y oportuno?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -405,14 +410,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta9-1"
                             type="radio"
                             name="pregunta9"
-                            value=" Menos de 5 minutos."
+                            value="Sí, tenemos acuerdos establecidos con proveedores para garantizar suministros."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta9-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Menos de 5 minutos.
+                            Sí, tenemos acuerdos establecidos con proveedores
+                            para garantizar suministros.
                           </label>
                         </div>
 
@@ -422,14 +428,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta9-2"
                             type="radio"
                             name="pregunta9"
-                            value="Entre 5 y 10 minutos."
+                            value="No hay acuerdos específicos, pero trabajamos con proveedores confiables."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta9-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Entre 5 y 10 minutos.
+                            No hay acuerdos específicos, pero trabajamos con
+                            proveedores confiables.
                           </label>
                         </div>
 
@@ -439,14 +446,15 @@ export default function EntrevistaRegistroPaciente({
                             id="pregunta9-3"
                             type="radio"
                             name="pregunta9"
-                            value="Más de 10 minutos"
+                            value=" No contamos con acuerdos establecidos con proveedores."
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta9-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Más de 10 minutos.
+                            No contamos con acuerdos establecidos con
+                            proveedores.
                           </label>
                         </div>
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">

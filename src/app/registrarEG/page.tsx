@@ -9,7 +9,7 @@ import { useForm } from "react-hook-form";
 
 
 
-export default function Regisrar() {
+export default function RegistrarEG() {
   const router = useRouter();
 
   const user:any = "e"
@@ -47,7 +47,7 @@ export default function Regisrar() {
 
       const {response} = await responsen.json()
       console.log(response._id)
-      router.push(`/entrevistaRegistroPaciente/${response._id}`, { scroll: true}) ;
+      router.push(`/entrevistaGestionInventario/${response._id}`, { scroll: true}) ;
     } catch (error: any) {
       console.log("hubo un error");
       router.push("/", { scroll: false });

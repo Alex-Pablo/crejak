@@ -62,14 +62,14 @@ export default function Proyecto() {
               <Link href="/registrar">
               <motion.div className={styles.entreCitaRePaciente}>
                 <p className={styles.titleCiRepaciente}>Entrevisa</p>
-                <p className={styles.proCiRePaciente}>Proceso de cita y registro de pacientes</p>
+                <p className={styles.proCiRePaciente}>Proceso cita y registro de pacientes</p>
               </motion.div>
               </Link>
 
-              <Link href="/registrar">
+              <Link href="/registrarEG">
               <motion.div className={styles.entreCitaRePaciente}>
                 <p className={styles.titleCiRepaciente}>Entrevisa</p>
-                <p className={styles.proCiRePaciente}>Proceso de Gestion de Inventarios</p>
+                <p className={styles.proCiRePaciente}>Proceso Gestion de Inventarios</p>
               </motion.div>
               </Link>
             </div>
