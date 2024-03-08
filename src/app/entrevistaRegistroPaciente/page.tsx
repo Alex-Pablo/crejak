@@ -6,15 +6,13 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
-export default function EntrevistaRegistroPaciente({
-  title,
-  user,
-}: {
-  title: string;
-  user?: any;
-}) {
-  const router = useRouter();
 
+
+export default function EntrevistaRegistroPaciente() 
+{
+  const router = useRouter();
+  const user:any = "e"
+  
   const { register, handleSubmit, reset, formState } = useForm({
     defaultValues: user,
   });
