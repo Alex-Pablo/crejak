@@ -72,6 +72,13 @@ export default function Proyecto() {
                 <p className={styles.proCiRePaciente}>Proceso Gestion de Inventarios</p>
               </motion.div>
               </Link>
+
+              <Link href="/registrarEPF">
+              <motion.div className={styles.entreCitaRePaciente}>
+                <p className={styles.titleCiRepaciente}>Entrevisa</p>
+                <p className={styles.proCiRePaciente}>Proceso Pago facturacion</p>
+              </motion.div>
+              </Link>
             </div>
           </motion.div>
         </div>
