@@ -28,13 +28,17 @@ export default function Home() {
             <p className={styles.slogan1}>Somos</p>
             <p className={styles.slogan2}>tu solucion</p>
 
-            <motion.button
-              className={styles.btnProject}
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-            >
-              <Image src={iconArrowIzquierda} alt="" width={20} /> Ver Proyecto
-            </motion.button>
+            <div>
+              <Link href="/proyecto">
+              <motion.button
+                className={styles.btnProject}
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <Image src={iconArrowIzquierda} alt="" width={20} /> Ver  incremento
+              </motion.button>
+              </Link>
+            </div>
           </motion.div>
         </div>
 

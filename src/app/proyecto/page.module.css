@@ -1,0 +1,69 @@
+.container{
+    background-color: #FAFAFA;
+    height: 100vh;
+    padding: 2% 5%;
+  }
+  
+  .logo{
+    color: #6D0DE3;
+    font-size: 1.1rem;
+    font-family: SignikaBold;
+    height: 5%;
+  }
+
+  .wrapperMain{
+    height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .wrapperProyecCenter{
+    grid-column: 1;
+    grid-row: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerProject{
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+.titleProjectMain{
+    font-size: 1.6rem;
+    color: #2F3E46;
+    font-family: 'SignikaBold';
+}
+
+.wrapperEntrevistasCuestionarios{
+  margin-top:40px ;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.entreCitaRePaciente{
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: rgba(141, 197, 156, 0.67);
+}
+
+.titleCiRepaciente{
+  font-size: 1.3em;
+  color: #2B2934;
+  font-family: 'SignikaBold';
+  margin-bottom: 5px;
+}
+
+.proCiRePaciente{
+  color: #2F3E46;
+  font-family: 'SignikaSemibold';
+  font-size: 1rem;
+}

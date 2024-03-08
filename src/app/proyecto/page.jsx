@@ -1,0 +1,81 @@
+"use client";
+import styles from "./page.module.css";
+import { AnimatePresence, LayoutGroup, motion, useScroll } from "framer-motion";
+import Link from "next/link";
+import Image from "next/image";
+
+export default function Proyecto() {
+
+
+
+	async function handleSubmit() {
+		const data = {
+      name:"fewf",
+      age:1
+		};
+
+		try {
+      
+			const response = await fetch("/api", {
+				method: "POST",
+				body: JSON.stringify(data),
+				headers: {
+					"Content-Type": "application/json",
+				},
+			});
+			if (!response.ok) {
+				throw new Error("HTTP error! status: " + response.status);
+			}
+			setMessageSent(true);
+		} catch {
+			console.log(
+				"There was a problem with the fetch operation " + error.message
+			);
+		}
+	}
+  
+  return (
+    <div className={styles.container}>
+      <Link href="/">
+        <nav className={styles.logo}>crejak</nav>
+      </Link>
+
+      <div className={styles.wrapperMain}>
+        <div className={styles.wrapperProyecCenter}>
+          <motion.div
+            drag
+            dragConstraints={{
+              top: -10,
+              left: -10,
+              right: -10,
+              bottom: -10,
+            }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            className={styles.containerProject}
+          >
+            <p className={styles.titleProjectMain}>
+              Entrevista y Cuestionarios
+            </p>
+
+            <div className={styles.wrapperEntrevistasCuestionarios}>
+              <Link href="/registrar">
+              <motion.div className={styles.entreCitaRePaciente}>
+                <p className={styles.titleCiRepaciente}>Entrevisa</p>
+                <p className={styles.proCiRePaciente}>Proceso de cita y registro de pacientes</p>
+              </motion.div>
+              </Link>
+
+              <Link href="/registrar">
+              <motion.div className={styles.entreCitaRePaciente}>
+                <p className={styles.titleCiRepaciente}>Entrevisa</p>
+                <p className={styles.proCiRePaciente}>Proceso de Gestion de Inventarios</p>
+              </motion.div>
+              </Link>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </div>
+  );
+}
