@@ -79,6 +79,12 @@ export default function Proyecto() {
                 <p className={styles.proCiRePaciente}>Proceso Pago facturacion</p>
               </motion.div>
               </Link>
+              <Link href="/registrarCDT">
+              <motion.div className={styles.entreCitaRePaciente}>
+                <p className={styles.titleCiRepaciente}>Cuestionario</p>
+                <p className={styles.proCiRePaciente}>Proceso Diagnostico y tratamiento</p>
+              </motion.div>
+              </Link>
             </div>
           </motion.div>
         </div>

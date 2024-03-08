@@ -1,0 +1,89 @@
+.container{
+    background-color: #FAFAFA;
+    min-height: 100vh;
+    padding: 2% 5%;
+  }
+  
+  .logo{
+    color: #6D0DE3;
+    font-size: 1.1rem;
+    font-family: SignikaBold;
+    height: 5%;
+  }
+
+  .wrapperMain{
+    min-height: 95%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+  .wrapperProyecCenter{
+    grid-column: 1;
+    grid-row: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .containerProject{
+    min-height: 90%;
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+    padding: 2% 5%;
+}
+
+.titleProjectMain{
+    font-size: 1rem;
+    color: #35434b;
+    font-family: 'SignikaRegular';
+    margin-bottom: 30px;
+}
+
+.wrapperTituloProcess{
+  background-color: #2B2934;
+  color: #DAF7D5;
+  padding: 30px;
+  border-radius: 20px;
+  width: 80%;
+}
+
+.tituloInforUser{
+    font-family: 'SignikaBold';
+    margin-left: 10%;
+    font-size: 1.3rem;
+}
+
+.wrapperformInfoUser{
+  width: 90%;
+  margin: auto;
+}
+
+
+
+.tituloPregunta{
+  background-color: #69BF70;
+  padding: 10px;
+  border-radius: 15px;
+  color: #000000;
+  font-family: 'SignikaSemibold';
+  font-size: 1rem;
+}
+
+.wrapperSelectionOptions{
+  border: #69BF70 solid 1px;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0 0 0;
+}
+
+.btnEnviar{
+  background-color:#29923f ;
+  color: white;
+  font-family: 'SignikaSemiBold';
+  padding: 8px 15px;
+  border-radius: 7px;
+  margin-top: 25px;
+}
