@@ -463,14 +463,14 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta8-1"
                             type="radio"
                             name="pregunta8"
-                            value="Si"
+                            value="Mucho"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta8-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Sí
+                            Mucho
                           </label>
                         </div>
 
@@ -480,14 +480,31 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta8-2"
                             type="radio"
                             name="pregunta8"
-                            value=" No"
+                            value="Poco"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta8-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            No
+                            Poco
+                          </label>
+                        </div>
+
+                        <div className="flex items-center mb-4">
+                          <input
+                            {...fields.pregunta8}
+                            id="pregunta8-3"
+                            type="radio"
+                            name="pregunta8"
+                            value="Poco"
+                            className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
+                          />
+                          <label
+                            htmlFor="pregunta8-3"
+                            className="block ms-2 text-sm font-medium text-gray-900"
+                          >
+                            Innecesario
                           </label>
                         </div>
 
