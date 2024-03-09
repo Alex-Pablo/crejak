@@ -100,6 +100,13 @@ export default function Proyecto() {
                 <p className={styles.proCiRePaciente}>Proceso  Recepcion registro de informacion</p>
               </motion.div>
               </Link>
+
+              <Link href="/results">
+              <motion.div className={styles.resultadosContainer}>
+                <p className={styles.titleCiRepaciente}>Resultados</p>
+                <p className={styles.proCiRePaciente}>Participantes de las entrevistas y cuestionarios</p>
+              </motion.div>
+              </Link>
             </div>
           </motion.div>
         </div>

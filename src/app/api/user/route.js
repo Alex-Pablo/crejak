@@ -2,10 +2,13 @@ import { NextResponse } from "next/server"
 import user from "../../../Model/User"
 import connectDB from "../../lib/connectDB"
 
-export function GET(){
+export async function GET(){
+    await connectDB()
+    const users = await user.find()
     return NextResponse.json({
-        message:"Get"
+        message:users
     })
+    l
 }
 
 export async function POST(req){
