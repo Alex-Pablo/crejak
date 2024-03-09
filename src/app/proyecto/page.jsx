@@ -92,6 +92,13 @@ export default function Proyecto() {
                 <p className={styles.proCiRePaciente}>Proceso Gestion de informacion y comunicacion</p>
               </motion.div>
               </Link>
+
+              <Link href="/registrarCRR">
+              <motion.div className={styles.entreCitaRePaciente}>
+                <p className={styles.titleCiRepaciente}>Cuestionario</p>
+                <p className={styles.proCiRePaciente}>Proceso  Recepcion registro de informacion</p>
+              </motion.div>
+              </Link>
             </div>
           </motion.div>
         </div>
