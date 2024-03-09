@@ -8,11 +8,13 @@ import iconArrowOutwardWhite from "../../public/ArrowOutwardWhite.svg";
 import { useCallback, useState } from "react";
 import Link from "next/link";
 import drawProgramm from '../../public/undraw_programming_re_kg9v.svg'
-
+import logo  from '../../public/logo.png'
 export default function Home() {
   return (
     <div className={styles.container}>
-      <nav className={styles.logo}>crejak</nav>
+      <nav className={styles.logo}>
+        <Image src={logo} alt="." width={50}/>
+      </nav>
       <div className={styles.wrapperMain}>
         <div className={styles.wrapperContent}>
           <motion.div

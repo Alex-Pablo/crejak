@@ -3,6 +3,7 @@ import styles from "./page.module.css";
 import { AnimatePresence, LayoutGroup, motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import logo  from '../../../public/logo.png'
 
 export default function Proyecto() {
 
@@ -37,7 +38,7 @@ export default function Proyecto() {
   return (
     <div className={styles.container}>
       <Link href="/">
-        <nav className={styles.logo}>crejak</nav>
+      <Image src={logo} alt="." width={50}/>
       </Link>
 
       <div className={styles.wrapperMain}>

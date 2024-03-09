@@ -7,7 +7,8 @@ import { useRouter } from "next/navigation";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 
-
+import Image from "next/image";
+import logo  from '../../../public/logo.png'
 
 export default function RegistrarEG() {
   const router = useRouter();
@@ -56,7 +57,7 @@ export default function RegistrarEG() {
   return (
     <div className={styles.container}>
       <Link href="/">
-        <nav className={styles.logo}>Nova</nav>
+      <Image src={logo} alt="." width={50}/>
       </Link>
 
       <div className={styles.wrapperMain}>
