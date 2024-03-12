@@ -26,7 +26,7 @@
 }
 
 .content{
-  background-color: #2B2934;
+  background-color: #2F3D46;
   border-radius: 20px;
   height: 100%;
   padding: 10%;
@@ -62,7 +62,7 @@
 }
 
 .containerImg{
-  background-color: #6724BB;
+  background-color: #364F53;
   border-radius: 20px;
   height: 100%;
   padding: 10%;
@@ -86,11 +86,11 @@
 }
 
 .containerAboutUs{
-  background-color: #D2FF02;
+  background-color: #2e8572;
   border-radius: 20px;
   height: 100%;
   padding: 10%;
-
+  font-family: 'SignikaSemiBold';
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -110,11 +110,11 @@
 }
 
 .containerContact{
-  background-color: #6A26BA;
+  background-color: #517970;
   border-radius: 20px;
   height: 100%;
   padding: 10%;
-
+  font-family: 'SignikaSemiBold';
   display: flex;
   justify-content: space-between;
   align-items: flex-end;

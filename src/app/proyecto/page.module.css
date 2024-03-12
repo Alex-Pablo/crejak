@@ -52,14 +52,14 @@
   width: 250px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(141, 197, 156, 0.67);
+  background-color: #67b4a4;
 }
 
 .resultadosContainer{
   width: 250px;
   padding: 20px;
   border-radius: 10px;
-  background-color: rgba(70, 211, 108, 0.781);
+  background-color: #2F3D46;
 }
 
 .titleCiRepaciente{
@@ -71,6 +71,20 @@
 
 .proCiRePaciente{
   color: #2F3E46;
+  font-family: 'SignikaSemibold';
+  font-size: 1rem;
+}
+
+.titleResulRepaciente{
+  font-size: 1.3em;
+  color: #ffffff;
+  font-family: 'SignikaBold';
+  margin-bottom: 5px;
+}
+
+
+.proResulRePaciente{
+  color: #e3e8eb;
   font-family: 'SignikaSemibold';
   font-size: 1rem;
 }

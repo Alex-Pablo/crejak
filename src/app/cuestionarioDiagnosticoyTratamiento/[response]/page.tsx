@@ -6,7 +6,8 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
-
+import Image from "next/image";
+import logo  from '../../../../public/logo.png'
 export default function CuestionarioDiagnosticoyTratamiento({
   params,
 }: {
@@ -77,7 +78,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
   return (
     <div className={styles.container}>
       <p>
-        <nav className={styles.logo}>Nova</nav>
+        <Image src={logo} alt="." width={50}/>
       </p>
 
       <div className={styles.wrapperMain}>
