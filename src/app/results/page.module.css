@@ -1,6 +1,6 @@
 .container{
     background-color: #FAFAFA;
-    height: 100vh;
+    min-height: 100vh;
     padding: 2% 5%;
   }
   
@@ -28,7 +28,7 @@
   }
 
   .containerProject{
-    height: 90%;
+    min-height: 90%;
     width: 100%;
     background-color: white;
     border-radius: 20px;
@@ -43,15 +43,16 @@
 }
 
 .tituloInforUser{
-    color: #253238;
-    font-family: 'SignikaSemiBold';
-    margin-left: 10%;
-    font-size: 1.2rem;
+    color: #2f4632;
+    font-family: 'SignikaBold';
+    margin-left: 2%;
+    font-size: 1.3rem;
     margin-bottom : 30px;
+    margin-top: 20px;
 }
 
 .wrapperformInfoUser{
-  width: 80%;
+  width: 95%;
   margin: auto;
 }
 

@@ -89,12 +89,14 @@ export default function CuestionarioDiagnosticoyTratamiento({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+              <motion.div className="md:container md:mx-auto">
+
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
                   Cuestionario proceso de diagnostico y tratamiento
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
@@ -127,7 +129,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta1-2"
                             type="radio"
                             name="pregunta1"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -191,7 +193,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta2-3"
                             type="radio"
                             name="pregunta2"
-                            value="Análisis instantáneo"
+                            value="Especialista"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -208,6 +210,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                       </div>
                     </fieldset>
                   </div>
+
 
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
@@ -383,7 +386,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta6-2"
                             type="radio"
                             name="pregunta6"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -498,7 +501,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta8-3"
                             type="radio"
                             name="pregunta8"
-                            value="Poco"
+                            value="Innecesario"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label

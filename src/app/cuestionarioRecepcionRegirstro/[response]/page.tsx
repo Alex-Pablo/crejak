@@ -89,14 +89,21 @@ export default function CuestionarioRecepcionRegirstro({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+              <motion.div className="md:container md:mx-auto">
+
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
                   Cuestionario recepcion y registro de pacientes
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
+
+
+
                   <div className="grid grid-cols-2 gap-4">
+
+
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Crees que el sistema actual de gestión de citas es
@@ -161,6 +168,7 @@ export default function CuestionarioRecepcionRegirstro({
                       </div>
                     </fieldset>
 
+
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Estás satisfecho con el proceso actual de registro de
@@ -208,14 +216,14 @@ export default function CuestionarioRecepcionRegirstro({
                             id="pregunta2-3"
                             type="radio"
                             name="pregunta2"
-                            value="Neutra"
+                            value="Neutral"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta2-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Neutra
+                            Neutral
                           </label>
                         </div>
 
@@ -224,6 +232,8 @@ export default function CuestionarioRecepcionRegirstro({
                         </div>
                       </div>
                     </fieldset>
+
+
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
@@ -343,10 +353,10 @@ export default function CuestionarioRecepcionRegirstro({
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Te gustaría que el software pudiera generar informes
-                        sobre la cantidad de citas programadas, servicios
-                        prestados y facturación mensual en una hoja de cálculo
-                        (Excel)?
+                      ¿Te gustaría que el software pudiera generar informes sobre la cantidad de citas 
+programadas, servicios prestados y facturación mensual en una hoja de cálculo 
+(Excel)?
+
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -363,7 +373,7 @@ export default function CuestionarioRecepcionRegirstro({
                             htmlFor="pregunta5-1"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            Sí
+                            Si
                           </label>
                         </div>
 
@@ -373,14 +383,14 @@ export default function CuestionarioRecepcionRegirstro({
                             id="pregunta5-2"
                             type="radio"
                             name="pregunta5"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
                             htmlFor="pregunta5-2"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
-                            No
+                            NO
                           </label>
                         </div>
 
@@ -390,7 +400,7 @@ export default function CuestionarioRecepcionRegirstro({
                             id="pregunta5-2"
                             type="radio"
                             name="pregunta5"
-                            value=" No"
+                            value="Otra"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -409,10 +419,9 @@ export default function CuestionarioRecepcionRegirstro({
 
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Crees que un software de registro debería tener la
-                        opción de almacenar imágenes y documentos relacionados
-                        con las mascotas, como radiografías y resultados de
-                        pruebas?
+                      ¿Crees que un software de registro debería tener la opción de almacenar 
+imágenes y documentos relacionados con las mascotas, como radiografías y 
+resultados de pruebas?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -439,7 +448,7 @@ export default function CuestionarioRecepcionRegirstro({
                             id="pregunta6-2"
                             type="radio"
                             name="pregunta6"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -460,9 +469,8 @@ export default function CuestionarioRecepcionRegirstro({
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        . ¿Consideras importante que el software tenga un
-                        calendario visual que muestre las citas programadas para
-                        facilitar la programación?
+                      ¿Consideras importante que el software tenga un calendario visual que muestre 
+las citas programadas para facilitar la programación?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>
@@ -508,9 +516,8 @@ export default function CuestionarioRecepcionRegirstro({
 
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
-                        ¿Te gustaría que el software pudiera generar
-                        automáticamente etiquetas de identificación para las
-                        mascotas registradas en la veterinaria?
+                      ¿Te gustaría que el software pudiera generar automáticamente etiquetas de 
+identificación para las mascotas registradas en la veterinaria?
                       </legend>
 
                       <div className={styles.wrapperSelectionOptions}>

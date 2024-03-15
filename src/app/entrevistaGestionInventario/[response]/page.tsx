@@ -91,17 +91,28 @@ export default function EntrevistaGestionInventario({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+              <motion.div className="md:container md:mx-auto">
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
                   Proceso gestion de inventario
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
+              <div className={styles.inscructionsCuestions}>
+                <p>
+                  Instrucciones: a continuación, se presenta una serie de
+                  preguntas referente a sus conocimientos y ocupación, pedimos
+                  contestar con total claridad.
+                </p>
+              </div>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta1"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo describiría el actual proceso de gestión de
                       inventarios en la clínica veterinaria?
@@ -110,7 +121,7 @@ export default function EntrevistaGestionInventario({
                       {...fields.pregunta1}
                       id="pregunta1"
                       name="pregunta1"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-green-900 focus:border-green-900 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-green-900 focus:border-green-900 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -118,10 +129,13 @@ export default function EntrevistaGestionInventario({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta2"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son los mayores desafíos que enfrenta el personal
                       al manejar el inventario de suministros médicos y
@@ -131,7 +145,7 @@ export default function EntrevistaGestionInventario({
                       {...fields.pregunta2}
                       id="pregunta2"
                       name="pregunta2"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -139,10 +153,13 @@ export default function EntrevistaGestionInventario({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta3"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo se realizan las compras y reposiciones de
                       inventario? ¿Hay un proceso establecido?
@@ -151,7 +168,7 @@ export default function EntrevistaGestionInventario({
                       {...fields.pregunta3}
                       id="pregunta3"
                       name="pregunta3"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none block  mt-5 h-20  rounded-xl p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -159,10 +176,13 @@ export default function EntrevistaGestionInventario({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta4"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo se aseguran de mantener actualizada la información
                       sobre las fechas de vencimiento de los productos?
@@ -171,7 +191,7 @@ export default function EntrevistaGestionInventario({
                       {...fields.pregunta4}
                       id="pregunta4"
                       name="pregunta4"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none block mt-5 h-20  rounded-xl p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -179,10 +199,13 @@ export default function EntrevistaGestionInventario({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta5"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son las estrategias implementadas para minimizar
                       pérdidas y desperdicios en el inventario?
@@ -191,13 +214,15 @@ export default function EntrevistaGestionInventario({
                       {...fields.pregunta5}
                       id="pregunta5"
                       name="pregunta5"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none  mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
                       {errors.pregunta5?.message?.toString()}
                     </div>
                   </div>
+
+
 
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">

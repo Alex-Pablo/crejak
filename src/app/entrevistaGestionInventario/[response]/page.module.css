@@ -48,12 +48,10 @@
   color: #DAF7D5;
   padding: 30px;
   border-radius: 20px;
-  width: 80%;
 }
 
 .tituloInforUser{
     font-family: 'SignikaBold';
-    margin-left: 10%;
     font-size: 1.3rem;
 }
 
@@ -87,4 +85,11 @@
   padding: 8px 15px;
   border-radius: 7px;
   margin-top: 25px;
+}
+
+.inscructionsCuestions{
+  font-size: 0.9rem;
+  font-weight: 400; 
+  margin-top: 15px;
+  margin-bottom: 60px;
 }

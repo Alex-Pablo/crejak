@@ -10,6 +10,15 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        sm: '2rem',
+        lg: '6rem',
+        xl: '12rem',
+        '2xl': '14rem',
+      },
+    },
   },
   plugins: [],
 }

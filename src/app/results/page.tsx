@@ -50,8 +50,9 @@ export default function Results() {
             </Link>
 
             <motion.div className={styles.wrapperGetInfomacion}>
+              
               <p className={styles.tituloInforUser}>
-                Informacion de participantes de las entrevistas y cuestionarios
+                Participantes en las entrevistas y cuestionarios
               </p>
 
               <motion.div className={styles.wrapperformInfoUser}>
@@ -65,7 +66,7 @@ export default function Results() {
                         Email
                       </th>
                       <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
-                        Numero de telefono
+                        Telefono
                       </th>
                       <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
                         Area
@@ -84,6 +85,7 @@ export default function Results() {
                   </tbody>
                 </table>
               </motion.div>
+
             </motion.div>
 
             <div className={styles.wrapperEntrevistasCuestionarios}></div>

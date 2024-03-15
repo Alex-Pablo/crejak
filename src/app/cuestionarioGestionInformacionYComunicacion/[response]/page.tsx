@@ -92,12 +92,14 @@ export default function CuestionarioGestionInformacionYComunicacion({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+              <motion.div className="md:container md:mx-auto">
+
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
                   Cuestionario proceso gestion de la informacion y comunicacion
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
@@ -245,7 +247,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta3-2"
                             type="radio"
                             name="pregunta3"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -292,7 +294,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta4-2"
                             type="radio"
                             name="pregunta4"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -456,7 +458,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta7-3"
                             type="radio"
                             name="pregunta7"
-                            value="Correo electrónico"
+                            value="Llamada telefónica"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -552,7 +554,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta9-2"
                             type="radio"
                             name="pregunta9"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label

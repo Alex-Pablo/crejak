@@ -85,17 +85,28 @@ export default function EntrevistaPagosoFacturacion({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+              <motion.div className="md:container md:mx-auto">
+
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
                   Proceso pagos o facturacion
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
+              <div className={styles.inscructionsCuestions}>
+                <p>
+                  Instrucciones: a continuación, se presenta una serie de
+                  preguntas referente a sus conocimientos y ocupación, pedimos
+                  contestar con total claridad.
+                </p>
+              </div>
+
+
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta1"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo describiría el proceso actual de facturación y pago
                       en la clínica veterinaria?
@@ -104,7 +115,7 @@ export default function EntrevistaPagosoFacturacion({
                       {...fields.pregunta1}
                       id="pregunta1"
                       name="pregunta1"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-green-900 focus:border-green-900 "
+                      className=" resize-none  mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50   focus:ring-green-900 focus:border-green-900 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -112,10 +123,12 @@ export default function EntrevistaPagosoFacturacion({
                     </div>
                   </div>
 
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta2"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son los principales desafíos que enfrenta el
                       personal al procesar facturas y gestionar los pagos de los
@@ -125,7 +138,7 @@ export default function EntrevistaPagosoFacturacion({
                       {...fields.pregunta2}
                       id="pregunta2"
                       name="pregunta2"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50 focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -133,10 +146,13 @@ export default function EntrevistaPagosoFacturacion({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta3"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo manejan las discrepancias o problemas en las
                       facturas con los clientes?
@@ -145,7 +161,7 @@ export default function EntrevistaPagosoFacturacion({
                       {...fields.pregunta3}
                       id="pregunta3"
                       name="pregunta3"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none block mt-5 h-20  rounded-xl p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -156,7 +172,7 @@ export default function EntrevistaPagosoFacturacion({
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta4"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son las políticas de la clínica en términos de
                       plazos de pago para los clientes?
@@ -165,7 +181,7 @@ export default function EntrevistaPagosoFacturacion({
                       {...fields.pregunta4}
                       id="pregunta4"
                       name="pregunta4"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none block mt-5 h-20  rounded-xl p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -176,7 +192,7 @@ export default function EntrevistaPagosoFacturacion({
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta5"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Qué medidas se toman para garantizar la privacidad y
                       seguridad de la información financiera de los clientes?
@@ -185,7 +201,7 @@ export default function EntrevistaPagosoFacturacion({
                       {...fields.pregunta5}
                       id="pregunta5"
                       name="pregunta5"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none block mt-5 h-20  rounded-xl p-2.5 w-full text-sm text-gray-900 bg-gray-50  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">

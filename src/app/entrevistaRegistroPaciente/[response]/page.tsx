@@ -7,7 +7,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import logo  from '../../../../public/logo.png'
+import logo from "../../../../public/logo.png";
 export default function EntrevistaRegistroPaciente({
   params,
 }: {
@@ -16,7 +16,7 @@ export default function EntrevistaRegistroPaciente({
   const router = useRouter();
   const user: any = "e";
 
-  const idUser = params.response
+  const idUser = params.response;
 
   const { register, handleSubmit, reset, formState } = useForm({
     defaultValues: user,
@@ -60,7 +60,7 @@ export default function EntrevistaRegistroPaciente({
   };
 
   async function onSubmit(data: any) {
-    data.idUser = idUser
+    data.idUser = idUser;
     try {
       console.log(data);
       const response = await fetch("/api/entrevistaRegistroPaciente", {
@@ -80,7 +80,7 @@ export default function EntrevistaRegistroPaciente({
   return (
     <div className={styles.container}>
       <p>
-      <Image src={logo} alt="." width={50}/>
+        <Image src={logo} alt="." width={50} />
       </p>
 
       <div className={styles.wrapperMain}>
@@ -91,17 +91,33 @@ export default function EntrevistaRegistroPaciente({
             className={styles.containerProject}
           >
             <motion.div className={styles.wrapperGetInfomacion}>
+
+
+              <motion.div className="md:container md:mx-auto">
+
               <div className={styles.wrapperTituloProcess}>
                 <p className={styles.tituloInforUser}>
-                  Proceso registro de inventario y asignacion de cita
+                  Proceso registro de paciente y asignacion de cita
                 </p>
               </div>
-              <motion.div className={styles.wrapperformInfoUser}>
+
+              <div className={styles.inscructionsCuestions}>
+                <p>
+                  Instrucciones: a continuación, se presenta una serie de
+                  preguntas referente a sus conocimientos y ocupación, pedimos
+                  contestar con total claridad.
+                </p>
+              </div>
+
+
                 <form onSubmit={handleSubmit(onSubmit)}>
+
+
+                  
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta1"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo describiría el proceso actual de registro de
                       pacientes en la clínica veterinaria?
@@ -110,7 +126,7 @@ export default function EntrevistaRegistroPaciente({
                       {...fields.pregunta1}
                       id="pregunta1"
                       name="pregunta1"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-green-900 focus:border-green-900 "
+                      className=" resize-none mt-5 h-20  rounded-xl block  p-2.5 w-full text-sm text-gray-900 bg-gray-50    focus:ring-green-500 focus:border-green-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -118,10 +134,13 @@ export default function EntrevistaRegistroPaciente({
                     </div>
                   </div>
 
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta2"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son los desafíos más comunes que enfrenta el
                       personal al registrar la información de los pacientes?
@@ -130,7 +149,7 @@ export default function EntrevistaRegistroPaciente({
                       {...fields.pregunta2}
                       id="pregunta2"
                       name="pregunta2"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -138,10 +157,14 @@ export default function EntrevistaRegistroPaciente({
                     </div>
                   </div>
 
+
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta3"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cómo manejan la información confidencial de los pacientes
                       en términos de privacidad y seguridad?
@@ -150,7 +173,7 @@ export default function EntrevistaRegistroPaciente({
                       {...fields.pregunta3}
                       id="pregunta3"
                       name="pregunta3"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -158,10 +181,14 @@ export default function EntrevistaRegistroPaciente({
                     </div>
                   </div>
 
+
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta4"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuál es la importancia que asignan a la precisión y
                       actualización de los registros de los pacientes?
@@ -170,7 +197,7 @@ export default function EntrevistaRegistroPaciente({
                       {...fields.pregunta4}
                       id="pregunta4"
                       name="pregunta4"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none  mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
@@ -178,10 +205,14 @@ export default function EntrevistaRegistroPaciente({
                     </div>
                   </div>
 
+
+
+
+
                   <div className="mt-9">
                     <label
                       htmlFor="pregunta5"
-                      className="block mb-2 text-base font-bold text-gray-900"
+                      className="block mb-2 text-base font-semibold text-gray-800"
                     >
                       ¿Cuáles son las áreas específicas en las que cree que se
                       podrían realizar mejoras en el sistema de registro actual?
@@ -190,13 +221,16 @@ export default function EntrevistaRegistroPaciente({
                       {...fields.pregunta5}
                       id="pregunta5"
                       name="pregunta5"
-                      className=" resize-none block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 "
+                      className=" resize-none mt-5 h-20  rounded-xl block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  focus:ring-blue-500 focus:border-blue-500 "
                       placeholder="Comente aqui..."
                     ></textarea>
                     <div className="invalid-feedback text-red-600 text-sm font-semibold">
                       {errors.pregunta5?.message?.toString()}
                     </div>
                   </div>
+
+
+
 
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
@@ -263,6 +297,8 @@ export default function EntrevistaRegistroPaciente({
                       </div>
                     </fieldset>
 
+
+
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿El personal está capacitado regularmente en el manejo
@@ -326,6 +362,7 @@ export default function EntrevistaRegistroPaciente({
                       </div>
                     </fieldset>
                   </div>
+
 
                   <div className="grid grid-cols-2 gap-4">
                     <fieldset className="mt-9">
