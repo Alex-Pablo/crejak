@@ -49,9 +49,6 @@ export default function CuestionarioDiagnosticoyTratamiento({
     pregunta8: register("pregunta8", {
       required: "Elija una opcion",
     }),
-    pregunta9: register("pregunta9", {
-      required: "Elija una opcion",
-    }),
     pregunta10: register("pregunta10", {
       required: "Elija una opcion",
     }),
@@ -99,6 +96,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunata 1 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿El sistema debe tener capacidades de diagnóstico
@@ -145,7 +143,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunata 2 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         El sistema debe incluir opciones de tratamiento
@@ -213,6 +211,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
 
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* preguna 3 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se necesita integración con sistemas de registros
@@ -243,7 +242,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta3-2"
                             type="radio"
                             name="pregunta3"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -255,11 +254,12 @@ export default function CuestionarioDiagnosticoyTratamiento({
                         </div>
 
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
-                          {errors.pregunta1?.message?.toString()}
+                          {errors.pregunta3?.message?.toString()}
                         </div>
                       </div>
                     </fieldset>
 
+{/* pregunta 4 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se requiere que el sistema sea compatible con
@@ -290,7 +290,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta4-2"
                             type="radio"
                             name="pregunta4"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -309,6 +309,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunta 5 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿El sistema debe cumplir con normativas específicas de
@@ -339,7 +340,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta5-2"
                             type="radio"
                             name="pregunta5"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -356,6 +357,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                       </div>
                     </fieldset>
 
+{/* pregunta 6 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se requiere que el sistema tenga opciones de
@@ -405,6 +407,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunta 7 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se necesitan funciones de inteligencia artificial o
@@ -436,7 +439,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                             id="pregunta7-2"
                             type="radio"
                             name="pregunta7"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -453,6 +456,7 @@ export default function CuestionarioDiagnosticoyTratamiento({
                       </div>
                     </fieldset>
 
+{/* preugnat 8 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Qué tan importante es que el sistema tenga capacidades
@@ -519,55 +523,8 @@ export default function CuestionarioDiagnosticoyTratamiento({
                     </fieldset>
                   </div>
 
+{/* preguanta 10 */}
                   <div className="grid grid-cols-2 gap-4">
-                    <fieldset className="mt-9">
-                      <legend className={styles.tituloPregunta}>
-                        ¿Se necesitan funciones de inteligencia artificial o
-                        aprendizaje automático para mejorar la precisión del
-                        diagnóstico?
-                      </legend>
-
-                      <div className={styles.wrapperSelectionOptions}>
-                        <div className="flex items-center mb-4">
-                          <input
-                            {...fields.pregunta9}
-                            id="pregunta9-1"
-                            type="radio"
-                            name="pregunta9"
-                            value="Si"
-                            className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
-                          />
-                          <label
-                            htmlFor="pregunta9-1"
-                            className="block ms-2 text-sm font-medium text-gray-900"
-                          >
-                            Sí
-                          </label>
-                        </div>
-
-                        <div className="flex items-center mb-4">
-                          <input
-                            {...fields.pregunta9}
-                            id="pregunta9-2"
-                            type="radio"
-                            name="pregunta9"
-                            value=" No"
-                            className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
-                          />
-                          <label
-                            htmlFor="pregunta9-2"
-                            className="block ms-2 text-sm font-medium text-gray-900"
-                          >
-                            No
-                          </label>
-                        </div>
-
-                        <div className="invalid-feedback text-red-600 text-sm font-semibold">
-                          {errors.pregunta9?.message?.toString()}
-                        </div>
-                      </div>
-                    </fieldset>
-
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿El sistema debe cumplir con normativas específicas de
@@ -594,11 +551,11 @@ export default function CuestionarioDiagnosticoyTratamiento({
 
                         <div className="flex items-center mb-4">
                           <input
-                            {...fields.pregunta9}
+                            {...fields.pregunta10}
                             id="pregunta10-2"
                             type="radio"
                             name="pregunta10"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label

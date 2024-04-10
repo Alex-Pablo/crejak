@@ -11,6 +11,7 @@ const CuestionarioGestionInformacioyComuni = mongoose.Schema(
     pregunta7: String,
     pregunta8: String,
     pregunta9: String,
+    pregunta10: String,
     idUser: String,
   },
   {

@@ -103,7 +103,7 @@ export default function CuestionarioRecepcionRegirstro({
 
                   <div className="grid grid-cols-2 gap-4">
 
-
+{/* pregunta 1 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Crees que el sistema actual de gestión de citas es
@@ -168,7 +168,7 @@ export default function CuestionarioRecepcionRegirstro({
                       </div>
                     </fieldset>
 
-
+{/* pregunata 2 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Estás satisfecho con el proceso actual de registro de
@@ -237,6 +237,7 @@ export default function CuestionarioRecepcionRegirstro({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunat 3 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Te gustaría que el software nuevo fuera capaz de enviar
@@ -267,7 +268,7 @@ export default function CuestionarioRecepcionRegirstro({
                             id="pregunta3-2"
                             type="radio"
                             name="pregunta3"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -279,11 +280,11 @@ export default function CuestionarioRecepcionRegirstro({
                         </div>
 
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
-                          {errors.pregunta1?.message?.toString()}
+                          {errors.pregunta3?.message?.toString()}
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunta 4 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Consideras importante que el software tenga funciones
@@ -351,6 +352,7 @@ export default function CuestionarioRecepcionRegirstro({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunta 5 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                       ¿Te gustaría que el software pudiera generar informes sobre la cantidad de citas 
@@ -397,14 +399,14 @@ programadas, servicios prestados y facturación mensual en una hoja de cálculo
                         <div className="flex items-center mb-4">
                           <input
                             {...fields.pregunta5}
-                            id="pregunta5-2"
+                            id="pregunta5-3"
                             type="radio"
                             name="pregunta5"
                             value="Otra"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
-                            htmlFor="pregunta5-2"
+                            htmlFor="pregunta5-3"
                             className="block ms-2 text-sm font-medium text-gray-900"
                           >
                             Otra
@@ -416,7 +418,7 @@ programadas, servicios prestados y facturación mensual en una hoja de cálculo
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunat 6 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                       ¿Crees que un software de registro debería tener la opción de almacenar 
@@ -467,6 +469,7 @@ resultados de pruebas?
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunat 7 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                       ¿Consideras importante que el software tenga un calendario visual que muestre 
@@ -513,7 +516,7 @@ las citas programadas para facilitar la programación?
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunta 8 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                       ¿Te gustaría que el software pudiera generar automáticamente etiquetas de 
@@ -544,7 +547,7 @@ identificación para las mascotas registradas en la veterinaria?
                             id="pregunta8-2"
                             type="radio"
                             name="pregunta8"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -563,6 +566,7 @@ identificación para las mascotas registradas en la veterinaria?
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* preguna 9 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Te gustaría que el nuevo software permitiera programar
@@ -594,7 +598,7 @@ identificación para las mascotas registradas en la veterinaria?
                             id="pregunta9-2"
                             type="radio"
                             name="pregunta9"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -610,7 +614,7 @@ identificación para las mascotas registradas en la veterinaria?
                         </div>
                       </div>
                     </fieldset>
-
+{/* preguana 10 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Consideras importante que el software tenga un
@@ -638,11 +642,11 @@ identificación para las mascotas registradas en la veterinaria?
 
                         <div className="flex items-center mb-4">
                           <input
-                            {...fields.pregunta9}
+                            {...fields.pregunta10}
                             id="pregunta10-2"
                             type="radio"
                             name="pregunta10"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label

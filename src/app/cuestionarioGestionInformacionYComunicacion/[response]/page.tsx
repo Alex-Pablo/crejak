@@ -102,6 +102,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
 
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <div className="grid grid-cols-2 gap-4">
+                    {/* preguanta 1 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Prefieres un software instalado localmente en los
@@ -132,7 +133,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta1-2"
                             type="radio"
                             name="pregunta1"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -148,7 +149,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunta 2 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Qué nivel de experiencia tienes con el uso de software
@@ -216,6 +217,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunta 3 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Crees que implementar en el sistema un apartado de
@@ -259,11 +261,12 @@ export default function CuestionarioGestionInformacionYComunicacion({
                         </div>
 
                         <div className="invalid-feedback text-red-600 text-sm font-semibold">
-                          {errors.pregunta1?.message?.toString()}
+                          {errors.pregunta3?.message?.toString()}
                         </div>
                       </div>
                     </fieldset>
 
+{/* pregunta 4 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Consideras que el proceso actual de comunicación y
@@ -313,6 +316,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* preguna 5 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Te gustaría que el software pudiera generar
@@ -344,7 +348,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta5-2"
                             type="radio"
                             name="pregunta5"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -361,6 +365,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                       </div>
                     </fieldset>
 
+{/* pregunat 6 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Consideras importante que el software tenga la
@@ -392,7 +397,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta6-2"
                             type="radio"
                             name="pregunta6"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -411,6 +416,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregunata 7 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿cuál es el medio por el cual está más familiarizado
@@ -474,7 +480,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregunat 8 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se requiere que el sistema tenga capacidades de
@@ -505,7 +511,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                             id="pregunta8-2"
                             type="radio"
                             name="pregunta8"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
@@ -524,6 +530,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
+                    {/* pregua 9 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿Se requiere que el sistema tenga integración con otras
@@ -570,7 +577,7 @@ export default function CuestionarioGestionInformacionYComunicacion({
                         </div>
                       </div>
                     </fieldset>
-
+{/* pregynta 10 */}
                     <fieldset className="mt-9">
                       <legend className={styles.tituloPregunta}>
                         ¿El sistema debe ser capaz de generar facturas
@@ -597,11 +604,11 @@ export default function CuestionarioGestionInformacionYComunicacion({
 
                         <div className="flex items-center mb-4">
                           <input
-                            {...fields.pregunta9}
+                            {...fields.pregunta10}
                             id="pregunta10-2"
                             type="radio"
                             name="pregunta10"
-                            value=" No"
+                            value="No"
                             className="w-4 h-4 border-gray-300 focus:ring-2 focus:ring-blue-300"
                           />
                           <label
